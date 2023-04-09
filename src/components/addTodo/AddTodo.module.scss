@@ -1,0 +1,56 @@
+.wrapper{
+    @apply 
+        py-[1.875rem]
+    ;
+}
+
+.form {
+    .group{
+        @apply
+            flex
+            flex-col
+            items-center
+        ;
+    }
+    label{
+        @apply
+            text-[1.125rem]
+            pb-2
+        ;
+    }
+    input{
+        &[type="text"]{
+            @apply 
+                h-[2.8125rem]
+                rounded-lg
+                w-[17.5rem]
+                text-black
+                px-2
+                my-2
+            ;
+        }
+    }   
+}
+
+.btn{
+    &.submit{
+        @apply 
+            flex    
+            items-center
+            justify-center
+            bg-blue-300
+            p-[10px]
+            h-[45px] 
+            w-[45px]
+            text-[18px]
+            rounded-[50%]
+            transition-all
+            ease-out
+            duration-300
+            font-bold
+        ;
+        &:hover{
+            @apply bg-blue-400;
+        }
+    }
+}

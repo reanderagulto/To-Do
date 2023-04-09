@@ -1,0 +1,23 @@
+.app{
+    @apply 
+        flex 
+        flex-col 
+        items-center 
+        justify-center 
+        bg-blue-600 
+        rounded-lg
+        mx-auto
+        my-[1.875rem]
+        w-[42.5rem]
+        p-[2.1875rem]
+        text-white
+    ;
+
+    .header{
+        h1{
+            @apply
+                text-[2rem]
+            ;
+        }
+    }
+}
