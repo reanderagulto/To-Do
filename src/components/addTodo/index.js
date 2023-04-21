@@ -4,6 +4,9 @@ import clsx from 'clsx'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
+
 const AddTodo = () => {
 
   const clickHandler = (e) => {
@@ -13,18 +16,19 @@ const AddTodo = () => {
   return (
     <section className={cx.wrapper}>
       <form className={cx.form}>
-        <div className={cx.group}>
-          <label htmlFor="todo">Add Todo</label>
+        <label htmlFor="todo">Add Todo</label>
+        <div className={cx.group}>  
           <input type="text" name="todo" className={cx.control}/>
-        </div>
-        <div className={cx.group}>
           <button 
             type="submit" 
             className={clsx(cx.btn, cx.submit)}
             onClick={clickHandler}
           >
-            <FontAwesomeIcon icon="fa-solid fa-plus" />
+            <FontAwesomeIcon icon={faPlus} />
           </button>
+        </div>
+        <div className={cx.group}>
+          
         </div>
 
       </form>

@@ -8,8 +8,8 @@
     .group{
         @apply
             flex
-            flex-col
             items-center
+            justify-between
         ;
     }
     label{
@@ -39,15 +39,16 @@
             items-center
             justify-center
             bg-blue-300
-            p-[10px]
-            h-[45px] 
-            w-[45px]
-            text-[18px]
+            p-[0.625rem]
+            h-[2.8125rem] 
+            w-[2.8125rem]
+            text-[1.125rem]
             rounded-[50%]
             transition-all
             ease-out
             duration-300
             font-bold
+            mx-[0.9375rem]
         ;
         &:hover{
             @apply bg-blue-400;

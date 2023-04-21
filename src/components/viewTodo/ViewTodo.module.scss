@@ -1,3 +1,51 @@
-.header{
+.wrapper{
+    .list{
+        @apply 
+            flex
+            flex-col
+            justify-center
+        ;
+
+        .item {
+            @apply 
+                flex
+                items-center
+                gap-[55px]
+                text-[18px]
+                mt-[15px]
+            ;
+        }
+        .controls{
+            @apply 
+                flex
+                items-center
+                justify-center
+            ;
+        }
+    }
     
+    .btn{
+        &.icons{
+            @apply 
+                flex
+                items-center
+                justify-center
+                h-[45px]
+                w-[45px]
+                p-[10px]
+                rounded-[50%]
+                bg-blue-300
+                m-[5px]
+                transition-all
+                ease-out
+                duration-300
+            ;
+            &:hover{
+                @apply 
+                    cursor-pointer
+                    bg-blue-400
+                ;
+            }
+        }
+    }
 }
